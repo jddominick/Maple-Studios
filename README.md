@@ -8,10 +8,10 @@ This repo only hosts the installer and updates. The source is private.
 
 1. Download **Maple-Studios-Setup-x.y.z.exe** from [Releases](../../releases/latest) and run it. No admin rights needed.
    Windows may show "Windows protected your PC" because the installer isn't code-signed. Click **More info → Run anyway**.
-2. Install [Git for Windows](https://git-scm.com/download/win) if you don't have it.
-3. Start Maple from the desktop shortcut. If Claude Code isn't installed yet, double-click **Install Claude Code** on Maple's desktop.
-4. Double-click **Add project** and choose a folder that is a git repository (for a new game: make a folder, then run `git init` in it, or create the repo on GitHub and clone it).
-5. Double-click the project. The first time, Claude Code asks you to sign in with a Claude account (Pro or Max) or paste an Anthropic API key.
+2. Start Maple from the desktop shortcut. On first start she shows her **starter pack**: Godot (the game engine), Claude Code and Git are installed if missing, plus free extras you can untick (ffmpeg, GitHub CLI, ImageMagick, GIMP). Already have one installed somewhere unusual? Click **Locate…** next to it.
+3. Double-click **New game**, type a name, and Maple creates the project in `Documents\Maple Projects`. (Have a game already? Use **Add project** on its git folder.)
+4. The first time, Claude Code asks you to sign in with a Claude account (Pro or Max) or paste an Anthropic API key.
+5. Describe your game. Maple asks a few questions, writes a plan, then builds it step by step.
 
 Requires Windows 10 or 11, 64-bit.
 
