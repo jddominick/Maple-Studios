@@ -15,10 +15,22 @@ This repo only hosts the installer and updates. The source is private.
 
 Requires Windows 10 or 11, 64-bit.
 
+## Install on a Mac
+
+1. Download **Maple-Studios-x.y.z-mac.dmg** from [Releases](../../releases/latest). It works on Apple silicon and Intel Macs (macOS 12 or newer).
+2. Open the .dmg and drag **Maple Studios** into **Applications**.
+3. Open Maple from Applications. The first time, macOS says it can't check the app for malware because it isn't signed by an Apple developer. Press **Done**, then open **System Settings → Privacy & Security**, scroll down and press **Open Anyway** next to Maple Studios (you may need your Mac password). You only do this once.
+4. The starter pack installs Godot, Claude Code and Git, plus the extras you leave ticked. Git and the extras come from Homebrew; if you don't have it, Homebrew's installer runs in Maple's screen and asks you to press Return and type your Mac password (nothing shows while you type).
+5. Then it's the same as on Windows: **New game**, sign in to Claude, describe your game. Games go in `Documents/Maple Projects`.
+
 ## Updates
 
 Every time Maple boots she checks for a new version and asks: **[Y] INSTALL UPDATE** or **[N] LATER**. Yes downloads it, installs it and restarts Maple. Your projects, sessions and Maple's memory are kept (they live in `%APPDATA%\Maple Studios`).
 
+On a Mac, **Y** opens the new version's download page: open the .dmg, drag Maple Studios into Applications and choose **Replace**. Your data in `~/Library/Application Support/Maple Studios` is kept.
+
 ## Uninstall
 
 Settings → Apps → Maple Studios → Uninstall. Your data in `%APPDATA%\Maple Studios` is left in place; delete that folder too if you want everything gone.
+
+On a Mac, drag Maple Studios from Applications to the Trash. Your data stays in `~/Library/Application Support/Maple Studios` until you delete it.
